@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do App</title>
+  <link rel="stylesheet" href="DailyTask2.css">
+</head>
+<body>
+
+<div class="box">
+  <h2>To-Do List</h2>
+
+  <input type="text" id="task" placeholder="Enter Task">
+
+  <select id="priority">
+    <option>High</option>
+    <option>Medium</option>
+    <option>Low</option>
+  </select>
+
+  <button onclick="addTask()">Add</button>
+
+  <div class="filter">
+    <button onclick="showTask('all')">All</button>
+    <button onclick="showTask('pending')">Pending</button>
+    <button onclick="showTask('completed')">Completed</button>
+  </div>
+
+  <p id="count"></p>
+
+  <div id="list"></div>
+</div>
+
+<script src="DailyTask2.js"></script>
+</body>
+</html>
